@@ -57,7 +57,7 @@ const BaseInput = memo(forwardRef<HTMLInputElement, BaseInputProps>(({
       transition-all
       duration-200
       outline-none
-      ${icon ? "pl-18" : "pl-10"}
+      ${icon ? "pl-20" : "pl-10"}
       ${rightElement ? "pr-18" : "pr-10"}
     `;
 
