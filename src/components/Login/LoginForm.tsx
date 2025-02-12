@@ -26,7 +26,7 @@ const LoginForm = ({ onSuccess, onError }: LoginFormProps) => {
             className="flex flex-col gap-8 w-full max-w-[48.6rem]"
             noValidate
         >
-            <h1 className="text-heading-1 text-white mb-20">Login</h1>
+            <h2 className="text-heading-1 text-white mb-10">Login</h2>
             <TextInput
                 label="이메일"
                 placeholder="이메일을 입력하세요"

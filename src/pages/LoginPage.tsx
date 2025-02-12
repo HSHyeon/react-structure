@@ -1,6 +1,14 @@
+import LoginContainer from "@/components/Login/LoginContainer"
+import { PATH } from "@/constants/path";
+import { useNavigate } from "react-router-dom";
+
 function LoginPage() {
+  const navigate = useNavigate();
+  const handleLoginSuccess = () => {
+    navigate(PATH.root);
+  }
   return (
-    <div>LoginPage</div>
+    <LoginContainer onSuccess={handleLoginSuccess}/>
   )
 }
 

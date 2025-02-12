@@ -51,9 +51,12 @@ export const useLoginForm = ({ onSuccess, onError }: UseLoginFormProps) => {
 
 		setIsLoading(true);
 		try {
-			await login({ email, password });
+			//이메일 대신 임시 username
+			await login({username: email, password });
 			// showToastMessage({ type: "success", message: "로그인 성공!" });
-			onSuccess?.();
+			onSuccess?.(
+				
+			);
 		} catch (error) {
 			// const errorMessage = error instanceof Error ? error.message : "로그인 실패";
 			// showToastMessage({ type: "error", message: errorMessage });

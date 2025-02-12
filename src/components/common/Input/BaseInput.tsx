@@ -88,7 +88,7 @@ const BaseInput = memo(forwardRef<HTMLInputElement, BaseInputProps>(({
 			{label && (
 				<label className="block mb-2 text-body text-gray-300">
 					{label}
-					{required && <span className="text-error-500 ml-5">*</span>}
+					{required && <span className="text-error-500 ml-3">*</span>}
 				</label>
 			)}
 

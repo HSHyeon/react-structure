@@ -1,7 +1,7 @@
 import { AuthCredentials, AuthResponse } from "@/types/auth";
 import { client } from "../client";
 export const login = async (credentials: AuthCredentials): Promise<AuthResponse> => {
-	const response = await client<AuthResponse>("/auth/login", {
+	const response = await client<AuthResponse>("user/auth", {
 		method: "POST",
 		body: JSON.stringify(credentials),
 	});
