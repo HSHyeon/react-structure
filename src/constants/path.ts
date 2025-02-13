@@ -2,6 +2,7 @@ export const PATH = {
     root: "/",
     login: "/login",
     register: "/register",
+    cinema: "/cinema",
     movieDetail: (id: string) => `/movie/${id}`,
     writeMovie: "/movie/write",
     updateRole: "/user/role",

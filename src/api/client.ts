@@ -22,6 +22,8 @@ async function client<T>(endpoint: string, { params, ...customConfig }: RequestC
 
 	const config: RequestInit = {
 		...customConfig,
+		
+      credentials: 'include',
 		headers,
 	};
 

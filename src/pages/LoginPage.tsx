@@ -1,4 +1,4 @@
-import LoginContainer from "@/components/Login/LoginContainer"
+import LoginContainer from "@/components/login/LoginContainer"
 import { PATH } from "@/constants/path";
 import { useNavigate } from "react-router-dom";
 

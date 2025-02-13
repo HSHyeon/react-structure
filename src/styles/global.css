@@ -13,3 +13,10 @@
 :root[class~="light"] {
     filter: invert(100%);
 }
+
+.invisible-scroll {
+    overflow-y: auto;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
